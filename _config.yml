@@ -1,0 +1,84 @@
+title: Easter Park
+description: 愿做一生浪漫极客
+url: http://easterfan.github.io
+author: Easter
+logo: assets/img/favicon.png
+keywords: 
+  - Web
+  - HTML
+  - CSS
+  - JavaScript
+  - C++
+  - Linux
+  - Bash
+  - Vim
+
+permalink: /:year/:month/:day/:title.html
+paginate: 7
+paginate_path: "page:num"
+markdown: kramdown
+markdown_ext:  md
+excerpt_separator: "<!--more-->"
+highlighter: rouge
+lsi: false
+exclude: ['README.md', '.*', 'bin/', 'Gemfile', 'node_modules', '*.log', 'package.json']
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+ga: 'UA-65795020-1'
+adsense:
+disqus: 'harttleland'
+twitter:
+  username: harttleharttle
+
+sass:
+    style: compressed
+
+collections:
+  effective-cpp:
+    output: true
+    permalink: /:year/:month/:day/:title.html
+  song:
+    output: true
+    permalink: /:year/:month/:day/:title.html
+  vim-practice:
+    output: true
+    permalink: /:year/:month/:day/:title.html
+
+defaults:
+  -
+    scope:
+      path: "_drafts"
+    values:
+      layout: "blog"
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "blog"
+  -
+    scope:
+      path: "_effective-cpp"
+    values:
+      layout: "blog"
+  -
+    scope:
+      path: "_song"
+    values:
+      layout: "blog"
+  -
+    scope:
+      path: "_vim-practice"
+    values:
+      layout: "blog"
+
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from

@@ -1,0 +1,31 @@
+{% if page.tags %}
+  {% assign tags=page.tags%}
+{% else %}
+  {% assign tags=site.keywords%}
+{% endif %}
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="{{ tags | join: ',' }}">
+
+<meta name="google-site-verification" content="eLkhUhgjmoDvyZ3RB9Co10qQdgK2T0Jgc49Z90sjjRw" />
+
+{% seo %}
+{% feed_meta %}
+
+<link rel="shortcut icon" href="/assets/img/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="/assets/img/apple-touch-icon-precomposed.png">
+<link rel="stylesheet" href="/assets/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/lib/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/site.css">
+
+<script src="/assets/lib/jquery/jquery-2.0.3.min.js"></script>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "{{site.adsense}}",
+    enable_page_level_ads: true
+  });
+</script>

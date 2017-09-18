@@ -1,0 +1,47 @@
+<section class="module-author">
+  <div class="roll clearfix">
+    <img src="/assets/img/avatar.jpg">
+    <header>Easter
+      <i class="fa rolls-toggle fa-angle-double-up"></i>
+    </header>
+    <p>{{site.description}}</p>
+  </div>
+  <div class="roll clearfix">
+    <img src="/assets/img/wechat.png">
+    <header>我 · 黑黑
+      <i class="fa rolls-toggle fa-angle-double-up"></i>
+    </header>
+    <p>白天不懂夜的黑</p>
+  </div>
+  <div class="roll clearfix">
+    <img src="/assets/img/alipay.png">
+    <header>我 · 蛤蛤
+      <i class="fa rolls-toggle fa-angle-double-up"></i>
+    </header>
+    <p>嘻嘻哈哈</p>
+  </div>
+  <script>
+(function (){
+  var curr = 0;
+  var $parent = $('.module-author');
+  var $children = $parent.find('.roll')
+  $parent.find('.rolls-toggle').click(function () {
+    var $this = $(this)
+
+    $this.hide()
+    $children.css('transition', 'all .5s')
+    setTimeout(function(){
+      $children.css('transform', 'translate3d(0, -64px, 0)')
+      setTimeout(function(){
+        $children.css('transition', '')
+        setTimeout(function(){
+          $children.css('transform', '')
+          $parent.find('.roll:first').appendTo($parent)
+          $this.show()
+        })
+      }, 500)
+    })
+  })
+})();
+  </script>
+</section>
