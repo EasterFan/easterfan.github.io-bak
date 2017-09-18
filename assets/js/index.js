@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // },
       {
     plugin: 'rss',
-    url: 'http://localhost:4000/feed.xml',
+    url: 'http://easterfan.github.io/feed.xml',
     target: '_blank'
   }, {
     icon: 'fa-envelope',
