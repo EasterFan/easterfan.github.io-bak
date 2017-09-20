@@ -43,7 +43,8 @@ sudo dpkg -i libvpx1_1.1.0-1_amd64.deb
 sudo apt-get install virtualbox-5.0
 # 结束
 ```
-> 包依赖问题拖了3天，期间尝试Wily/Vivid，改变源以后libvpx1和libvpx2总有一个无法安装，最后选了trusty，libvpx1不能安装，后来在[这个网站](ftp.cn.debian.org)误打误撞找到了libvpx1的包，特地下载安装，包依赖问题解决。
+> 包依赖问题拖了3天，期间尝试Wily/Vivid，改变源以后libvpx1和libvpx2总有一个无法安装，最后选了trusty，libvpx1不能安装，后来在[这个网站](ftp.cn.debian.org)误打误撞找到了libvpx1的包，特地下载安装，包依赖问题解决。  
+
 # 安装Genymotion
 ## 下载
 [官网](http://www.genymotion.net/)需要先注册  
@@ -56,5 +57,16 @@ sudo chmod +x genymotion-2.10.0-linux_x64.bin
 ```
 ## 在board中打开genymotion
 ![](/assets/img/blog/Android/2017-09-17-genymotion.png)  
+
+# Android Studio关联Genymotion
+## Android Studio安装genymotion插件  
+> file--settings--plugins--install Genymotion--restart  
+重启后标签栏出现红色genymotion图标
+## 选择genymotion安装目录
+![](/assets/img/blog/Android/2017-09-17-genymotion-path.png)
+## 解决genymotion插件问题
+genymotion单独运行正常，但从Android Studio中启动时，会报错找不到virtualbox，这是AS中genymotion插件的问题  
+![](/assets/img/blog/Android/2017-09-17-genymotion-start-error.png)
+解决方法：在Genymotion的安装目录下删除**libssl.so**和**libcrypto.so**这两个文件
 卒。
 
