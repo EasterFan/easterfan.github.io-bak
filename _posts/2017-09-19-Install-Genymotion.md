@@ -43,7 +43,11 @@ sudo dpkg -i libvpx1_1.1.0-1_amd64.deb
 sudo apt-get install virtualbox-5.0
 # 结束
 ```
-> 包依赖问题拖了3天，期间尝试Wily/Vivid，改变源以后libvpx1和libvpx2总有一个无法安装，最后选了trusty，libvpx1不能安装，后来在[这个网站](ftp.cn.debian.org)误打误撞找到了libvpx1的包，特地下载安装，包依赖问题解决。  
+
+## 修改配置
+在 Oracle Virtual Box 软件中点击设置->系统->处理器,并勾选 PAE/NX 选项，这是跟主系统相关的安全选项。  
+
+> 包依赖期间尝试Wily/Vivid，改变源以后libvpx1和libvpx2总有一个无法安装，最后选了trusty，libvpx1不能安装，后来在[这个网站](ftp.cn.debian.org)误打误撞找到了libvpx1的包，特地下载安装，包依赖问题解决。  
 
 # 安装Genymotion
 ## 下载
