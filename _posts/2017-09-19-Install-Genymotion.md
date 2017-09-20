@@ -61,12 +61,13 @@ sudo chmod +x genymotion-2.10.0-linux_x64.bin
 # Android Studio关联Genymotion
 ## Android Studio安装genymotion插件  
 > file--settings--plugins--install Genymotion--restart  
+
 重启后标签栏出现红色genymotion图标
 ## 选择genymotion安装目录
 ![](/assets/img/blog/Android/2017-09-17-genymotion-path.png)
 ## 解决genymotion插件问题
 genymotion单独运行正常，但从Android Studio中启动时，会报错找不到virtualbox，这是AS中genymotion插件的问题  
-![](/assets/img/blog/Android/2017-09-17-genymotion-start-error.png)
-解决方法：在Genymotion的安装目录下删除**libssl.so**和**libcrypto.so**这两个文件
+![](/assets/img/blog/Android/2017-09-17-genymotion-start-error.png)  
+解决方法：在Genymotion的安装目录下删除**libssl.so**和**libcrypto.so**这两个文件  
 卒。
 
