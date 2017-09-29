@@ -1,5 +1,5 @@
 ---
-title: ubuntu安装配置Android Studio
+title: ubuntu安装Android Studio
 tags: Android 
 ---
 

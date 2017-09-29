@@ -1,5 +1,5 @@
 ---
-title: 安装Genymotion模拟器
+title: ubuntu安装Genymotion模拟器
 tags: Android 
 ---
 
