@@ -39,18 +39,19 @@ document.addEventListener('DOMContentLoaded', function () {
   //   url: 'https://github.com/username/repoName',
   //   target: '_blank'
   // },
-      {
-    plugin: 'rss',
-    url: 'http://easterfan.github.io/feed.xml',
-    target: '_blank'
-  }, {
-    icon: 'fa-envelope',
-    background: '#5484d6',
-    url: 'mailto:easter_wy@163.com?subject=来自EasterPark'
-  }, {
-    plugin: 'qrcode',
-    title: '扫一扫！'
-  }
+  //     {
+  //   plugin: 'rss',
+  //   url: 'http://easterfan.github.io/feed.xml',
+  //   target: '_blank'
+  // },
+  //     {
+  //   icon: 'fa-envelope',
+  //   background: '#5484d6',
+  //   url: 'mailto:easter_wy@163.com?subject=来自EasterPark'
+  // }, {
+  //   plugin: 'qrcode',
+  //   title: '扫一扫！'
+  // }
   //     {
   //   plugin: 'linkedin',
   //   url: 'https://linkedin.com/in/harttle',
