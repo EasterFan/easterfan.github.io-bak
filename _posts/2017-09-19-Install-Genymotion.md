@@ -3,8 +3,9 @@ title: ubuntu安装Genymotion模拟器
 tags: Android 
 ---
 
-> Android Studio自带的模拟器太慢了，Genymotion 是一套完整的工具,它提供了 Android 虚拟环境,自 Android 开发以来一直被称为是“史上最快的模拟器”。它运行在Virtualbox环境中。  
+> Android Studio自带的模拟器太慢了，Genymotion 是一套完整的工具,它提供了 Android 虚拟环境,自 Android 开发以来一直被称为是“史上最快的模拟器”。它运行在Virtualbox环境中。ubuntu下安装virtualbox要解决一个依赖问题。  
 
+<!--more-->
 # 安装Virtualbox
 ## 使用apt源安装  
 ```bash

@@ -2,8 +2,10 @@
 title: Android线性布局
 tags: Android 
 ---
-> 线性布局和相对布局常常结对使用
 
+> 线性布局和相对布局常常结对使用。gravity和weight等
+
+<!--more-->
 
 # 线性布局常用属性
 
