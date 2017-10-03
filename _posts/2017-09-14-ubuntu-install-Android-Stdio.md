@@ -3,6 +3,10 @@ title: ubuntu安装Android Studio
 tags: Android 
 ---
 
+Android studio是一款基于JBrain风格的IDE，具有强大的填词补全功能。
+
+<!--more-->
+
 > 首先保证安装了JDK环境  
 
 # 下载Android Studio
