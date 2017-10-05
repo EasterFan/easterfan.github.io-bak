@@ -94,7 +94,9 @@ public class codeTest {
 ```
 
 当test1和test2被定义时，运行正常；  
+
 当定义test4时，test1正常，test2报错：重复定义变量;  
+
 当定义test5时，test1和test2同时报错：重复定义变量   
  
 
