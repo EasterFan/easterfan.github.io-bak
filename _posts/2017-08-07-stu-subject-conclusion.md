@@ -3,7 +3,7 @@ title: 学生-专业小案例
 tags: Java 参数传递   
 ---
 
-> 对以前做的一个小案例的总结：model类的规范写法，参数传递
+> 对以前做的一个小案例的总结：model类的规范写法，参数传递，注解
 
 <!--more-->
 
@@ -62,6 +62,28 @@ tags: Java 参数传递
         return str;
     }
 ```
+
+方法三相对方法二，关联性更强。  
+另外，将对象作为成员属性，生成getter和setter方法，在getter方法取值前要加一段处理逻辑，判断对象有没有被初始化，如果没有初始化会抛出空指针异常。  
+
+```bash
+/**
+     * 方法三中获取的专业对象，获取前先判断有没有实例化，先实例化再返回
+     * @return
+     */
+    public Subject getSubject() {
+        if(this.subject == null)
+            this.subject = new Subject();
+        return subject;
+    }
+```
+
+## 注解
+> 声明在包，类，属性，方法，局部变量，方法参数前
+
+按执行分类：源码注解（编译成.class后不存在）---编译注解（在源码和.class中都存在）---运行注解（甚至会影响运行逻辑）  
+按来源分类：JDK自带（@overide）---第三方框架（spring@autoride）---自定义  
+
 
 [学生专业地址](https://github.com/EasterFan/JavaExercise)  
 卒。
