@@ -30,6 +30,7 @@ tags: Java 集合
 
 # 引入泛型
 set集和迭代器同时引入泛型，区别：遍历迭代器时，不需要强制类型转换  
+泛型的作用：限制了set集合元素只能是这个类型。手动强转成其他类型会在编译时报错。  
 
 ```bash
 	Set<Pet_set> delSet = new HashSet<Pet_set>();
