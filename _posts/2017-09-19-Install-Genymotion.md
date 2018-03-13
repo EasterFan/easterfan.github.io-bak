@@ -3,7 +3,7 @@ title: ubuntu安装Genymotion模拟器
 tags: Android 
 ---
 
-> Android Studio自带的模拟器太慢了，Genymotion 是一套完整的工具,它提供了 Android 虚拟环境,自 Android 开发以来一直被称为是“史上最快的模拟器”。它运行在Virtualbox环境中。ubuntu下安装virtualbox要解决一个依赖问题。  
+> Genymotion 是一套完整的工具,它提供了 Android 虚拟环境,被称为是“史上最快的模拟器”。它运行在Virtualbox环境中。ubuntu下安装virtualbox要解决一个依赖问题。  
 
 <!--more-->
 # 安装Virtualbox
@@ -31,6 +31,14 @@ sudo apt-get update
 sudo apt-get install virtualbox-5.0
 
 ```
+## 添加信任
+`sudo apt-get update`时，如果出现报错：  
+```bash
+The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 40976EAF437D05B5
+```
+则添加信任  
+`sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5`
+
 ## 解决依赖问题
 运行安装virtualbox命令后，会出现一个依赖无法安装  
 ```bash
