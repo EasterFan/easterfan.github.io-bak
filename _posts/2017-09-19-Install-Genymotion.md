@@ -21,6 +21,8 @@ wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-
 
 # 4.安装VirtualBox 5.0：
 sudo apt-get update
+# 查看virtualbox版本
+apt-cache madison virtualbox | grep -iv sources
 sudo apt-get install virtualbox-5.1
 
 ```
@@ -61,6 +63,7 @@ sudo apt-get install virtualbox-5.0
 
 ```bash
 sudo apt remove virtualbox
+sudo apt autoremove --purge virtualbox*
 ```
 # 二. 安装Genymotion
 
