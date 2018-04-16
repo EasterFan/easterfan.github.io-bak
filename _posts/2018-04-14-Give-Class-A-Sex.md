@@ -59,7 +59,7 @@ class Student{
 
 如果该类存入TreeSet（二叉树数据结构）中需要具备**比较性**：  
 ```java
-class Student implements Comparable{
+class Student implements Comparable<Student>{
     private String name;
     private int age;
 
@@ -68,12 +68,23 @@ class Student implements Comparable{
         this.age = age;
     }
 
+/*
   @Override
     public int compareTo(Object obj) {
         if(!(obj instanceof Student))
             throw new ClassCastException("类型不匹配");
         Student s = (Student)obj;
 
+        int num = this.name.compareTo(s.name);
+        if(num == 0)
+            return this.age - s.age;
+        return num;
+    }
+*/
+
+// Comparable 使用泛型, 不用判断类型转换异常
+@Override
+    public int compareTo(Student s) {
         int num = this.name.compareTo(s.name);
         if(num == 0)
             return this.age - s.age;
