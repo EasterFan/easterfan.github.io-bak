@@ -5,8 +5,9 @@ tags: ubuntu OSX
 
 > ubuntu的另一种打开方式 ：D 
 
+
 <!--more-->
-折腾完以后，是这个样子：  
+卖了一个肾以后，是这个样子：  
 ![](/assets/img/blog/2018/2018-03-24-osxInUbuntu.png)  
 
 ## 1. 工具  

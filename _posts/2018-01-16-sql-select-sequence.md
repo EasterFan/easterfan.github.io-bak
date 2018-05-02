@@ -4,6 +4,8 @@ tags: mysql 数据库
 ---
 > FROM > WHERE > GROUP BY > 聚合函数 > HAVING ====>  聚合函数不能**直接**作为 WHERE 的过滤条件
 
+<!--more-->
+
 # 一个问题
 在学生成绩表中,查询学生的平均分大于80的专业  
 
@@ -13,8 +15,6 @@ FROM myuser
 WHERE AVG(IFNULL(score,0)) > 80
 GROUP BY major;
 ```
-
-<!--more-->
 
 报错:  
 ```bash
