@@ -1,6 +1,6 @@
 ---
 title: set集合中的泛型
-tags: Java 集合 
+tags: Java 集合
 ---
 
 > 为什么要在set集合中使用泛型？
@@ -8,7 +8,7 @@ tags: Java 集合
 <!--more-->
 
 今天在使用set集合添加集合元素时，编译器总报警告：  
-![](/assets/img/blog/java/2017-11-18-warning.png)  
+![](/assets/img/blog/2017/2017-11-18-warning.png)  
 
 # 不使用泛型
 ```bash
@@ -43,7 +43,7 @@ set集和迭代器同时引入泛型，区别：遍历迭代器时，不需要�
             Pet_set ppdel = itdel.next();
             if(ppdel.getAge()<13){
                 delSet.add(ppdel);
-            } 
+            }
         }
 
 	homeSet.removeAll(delSet);

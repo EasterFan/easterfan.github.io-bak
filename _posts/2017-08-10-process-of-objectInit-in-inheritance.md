@@ -9,7 +9,7 @@ tags: Java 继承
 
 <!--more-->
 
-![](/assets/img/blog/java/2017-08-10-seq.png)  
+![](/assets/img/blog/2017/2017-08-10-seq.png)  
 
 # 测试代码
 

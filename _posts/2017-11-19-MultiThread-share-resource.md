@@ -1,6 +1,6 @@
 ---
 title: Runnable实现类的多线程资源共享
-tags: Java 线程 资源共享 
+tags: Java 线程 资源共享
 ---
 
 > 实现Runnable接口创建两个线程，这两个线程共享同一个对象（Runnable实现类）的**成员变量**。  
@@ -41,7 +41,7 @@ public class RunnableTest {
 
 ```
 两个子线程各自执行5次  
-![](/assets/img/blog/java/2017-11-19-noshare.png)  
+![](/assets/img/blog/2017/2017-11-19-noshare.png)  
 
 # 共享的状态
 
@@ -62,7 +62,7 @@ class ShareRunnable implements Runnable{
 
     // 被共享的成员变量
     int i = 0;
-    
+
     @Override
     public void run() {
 
@@ -90,12 +90,8 @@ public class MultiThreadShareTest {
 
 ```
 
-![](/assets/img/blog/java/2017-11-19-share.png)
+![](/assets/img/blog/2017/2017-11-19-share.png)
 ## 共享的意义
 线程间共享对象和成员变量，可以实现交互处理和数据交换。  
 
 卒。  
-
-
-
-

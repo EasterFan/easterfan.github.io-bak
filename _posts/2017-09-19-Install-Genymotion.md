@@ -1,6 +1,6 @@
 ---
 title: ubuntu安装Genymotion模拟器
-tags: Android 
+tags: Android
 ---
 
 > Genymotion 是一套完整的工具,它提供了 Android 虚拟环境,被称为是“史上最快的模拟器”。它运行在Virtualbox环境中。ubuntu下安装virtualbox要解决一个依赖问题。  
@@ -71,12 +71,12 @@ sudo apt autoremove --purge virtualbox*
 ## 1. 安装
 ```bash
 # 给权限
-sudo chmod +x genymotion-2.10.0-linux_x64.bin 
+sudo chmod +x genymotion-2.10.0-linux_x64.bin
 # 安装genymotion
-./genymotion-2.10.0-linux_x64.bin 
+./genymotion-2.10.0-linux_x64.bin
 ```
 ## 2. 在board中打开genymotion
-![](/assets/img/blog/Android/2017-09-17-genymotion.png)  
+![](/assets/img/blog/2017/2017-09-19-genymotion.png)  
 
 # 三. Android Studio关联Genymotion
 ## 1. Android Studio安装genymotion插件  
@@ -84,10 +84,9 @@ sudo chmod +x genymotion-2.10.0-linux_x64.bin
 
 重启后标签栏出现红色genymotion图标
 ## 2. 选择genymotion安装目录
-![](/assets/img/blog/Android/2017-09-17-genymotion-path.png)
+![](/assets/img/blog/2017/2017-09-19-genymotion-path.png)
 ## 3. 解决genymotion插件问题
 genymotion单独运行正常，但从Android Studio中启动时，会报错找不到virtualbox，这是AS中genymotion插件的问题  
-![](/assets/img/blog/Android/2017-09-17-genymotion-start-error.png)  
+![](/assets/img/blog/2017/2017-09-19-genymotion-start-error.png)  
 解决方法：在Genymotion的安装目录下删除**libssl.so**和**libcrypto.so**这两个文件  
 卒。
-

@@ -8,7 +8,7 @@ tags: Java 参数传递
 <!--more-->
 
 # 关于案例
-![](/assets/img/blog/java/2017-08-07-target.png)  
+![](/assets/img/blog/2017/2017-08-07-target.png)  
 同时，计算出这个专业有多少学生报名
 
 # 知识点总结
