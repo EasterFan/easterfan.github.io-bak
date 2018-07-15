@@ -1,5 +1,5 @@
 ---
-title: 【日记0708】flyway安装配置
+title: 【日记0710】flyway安装配置
 tags: flayway 数据库 qd
 ---
 
