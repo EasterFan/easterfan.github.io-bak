@@ -26,7 +26,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-ga: 'UA-121176712-1'
+ga: 'UA-121176712-2'
 adsense:
 disqus: 'easterpark'
 twitter:
